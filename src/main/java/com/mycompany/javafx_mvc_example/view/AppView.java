@@ -76,8 +76,8 @@ public class AppView {
         GridPane gridPane = new GridPane();
 
         Label accountHolderLabel = new Label("Account holder:");
-        Label accountNumberLabel = new Label("Account holder:");
-        Label accountBalanceLabel = new Label("Account holder:");
+        Label accountNumberLabel = new Label("Account Number:");
+        Label accountBalanceLabel = new Label("Account Balance:");
         accountHolderLabel.getStyleClass().add("bold");
         accountNumberLabel.getStyleClass().add("bold");
         accountBalanceLabel.getStyleClass().add("bold");
