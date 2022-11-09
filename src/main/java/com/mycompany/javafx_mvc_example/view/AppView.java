@@ -26,33 +26,33 @@ public class AppView {
 
     public AppView() {
         view = createView();
-    }
+    } // End AppView.
 
     public Label getAccountHolderDetailsLabel() {
         return accountHolderText;
-    }
+    } // End getAccountHolderDetailsLabel.
 
     public Label getAccountNumberDetailsLabel() {
         return accountNumberText;
-    }
+    } // End getAccountNumberDetailsLabel.
 
     public Label getAccountBalanceDetailsLabel() {
         return accountBalanceText;
-    }
+    } // End getAccountBalanceDetailsLabel.
 
     public Button getWithdrawalButton() {
         return withdrawalButton;
-    }
+    } // End getWithdrawalButton.
 
     public Button getDepositButton() {
         return depositButton;
-    }
+    } // End getDepositButton.
 
     public TextField getAmountTextField() {
         return amountTextField;
-    }
+    } // End getAmountTextField.
 
-    private VBox createView(){
+    private VBox createView() {
         VBox vBox = new VBox(15);
         vBox.setPrefWidth(300);
         vBox.setPrefHeight(250);
@@ -63,14 +63,14 @@ public class AppView {
         vBox.getChildren().add(createAccountDetails());
         vBox.getChildren().add(createDepositWithdrawalButtons());
         return vBox;
-    }
+    } // End createView.
 
-    private Node createTitle(){
+    private Node createTitle() {
         Label titleLabel = new Label("Bank Account");
         titleLabel.getStyleClass().add("title");
         titleLabel.setMaxWidth(600);
         return titleLabel;
-    }
+    } // End createTitle.
 
     private Node createAccountDetails() {
         GridPane gridPane = new GridPane();
@@ -105,7 +105,7 @@ public class AppView {
         );
 
         return gridPane;
-    }
+    } // End createAccountDetails.
 
     private Node createDepositWithdrawalButtons() {
         HBox hBox = new HBox(15);
@@ -115,9 +115,9 @@ public class AppView {
 
         hBox.getChildren().addAll(withdrawalButton, amountTextField, depositButton);
         return hBox;
-    }
+    } // End createDepositWithdrawalButtons.
 
     public Parent getView() {
         return view;
-    }
-}
+    } // End getView.
+} // End AppView.

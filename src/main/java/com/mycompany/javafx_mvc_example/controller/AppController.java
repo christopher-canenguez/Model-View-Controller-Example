@@ -10,11 +10,11 @@ public class AppController {
     //Model
     AccountDetails account;
 
-    public AppController(AppView view){
+    public AppController(AppView view) {
         setView(view);
-    }
+    } // End AppController.
 
-    public void setView(AppView view){
+    public void setView(AppView view) {
         //get model
         account = new AccountDetails("Moaath Alrajab", 987634, 100d);
 
@@ -34,7 +34,7 @@ public class AppController {
                         change.getRangeStart()
                 );
                 return change;
-            }
+            } // End else.
         }));
 
         //link Controller to View - methods for buttons
@@ -48,9 +48,11 @@ public class AppController {
         });
     }
 
-    private double getAmount(TextField field){
-        if (field.getText().equals("")) return 0;
+    private double getAmount(TextField field) {
+        if (field.getText().equals("")) {
+            return 0;
+        } // End if.
 
         return Double.parseDouble(field.getText());
-    }
-}
+    } // End getAmount.
+} // End AppController.

@@ -22,11 +22,10 @@ public class MVC_JavaFX_ExampleDriver extends Application {
         //primaryStage.getIcons().add(new Image(getClass().getResource("/img/EdenCodingIcon.png").toExternalForm()));
         primaryStage.setScene(new Scene(mainView.getView()));
         primaryStage.show();
-    }
+    } // End start.
 
     public static void main(String[] args) {
         launch(args);
-    }
+    } // End main.
 
-}
-
+} // End MVC_JavaFX_ExampleDriver.

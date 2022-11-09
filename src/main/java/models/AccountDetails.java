@@ -12,37 +12,37 @@ public class AccountDetails {
         this.accountHolder = new SimpleStringProperty(accountHolder);
         this.accountNumber = new SimpleIntegerProperty(accountNumber);
         this.accountBalance = new SimpleDoubleProperty(accountBalance);
-    }
+    } // End AccountDetails.
 
     public String getAccountHolder() {
         return accountHolder.get();
-    }
+    } // End getAccountHolder.
 
     public StringProperty accountHolderProperty() {
         return accountHolder;
-    }
+    } // End accountHolderProperty.
 
     public int getAccountNumber() {
         return accountNumber.get();
-    }
+    } // End getAccountNumber.
 
     public IntegerProperty accountNumberProperty() {
         return accountNumber;
-    }
+    } // End accountNumberProperty.
 
     public double getAccountBalance() {
         return accountBalance.get();
-    }
+    } // End getAccountBalance.
 
     public DoubleProperty accountBalanceProperty() {
         return accountBalance;
-    }
-    
-    public void deposit(double amount){
-        accountBalance.set(accountBalance.get() + amount);
-    }
+    } // End accountBalanceProperty.
 
-    public void withdraw(double amount){
+    public void deposit(double amount) {
+        accountBalance.set(accountBalance.get() + amount);
+    } // End deposit.
+
+    public void withdraw(double amount) {
         accountBalance.set(accountBalance.get() - amount);
-    }
-}
+    } // End withdraw.
+} // End AccountDetails.
